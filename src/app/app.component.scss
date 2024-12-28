@@ -1,0 +1,89 @@
+header {
+    h1 {
+        a {
+            background: url('/ecommerce.png') no-repeat;
+            background-size: 50px;
+            color: #9f2b9a;
+            font-size: 24px;
+            padding: 22px 0 0 48px;
+            text-decoration: none;
+            display: block;
+            height: 90px;
+            width: 90px;
+        }
+    }
+    h1 {
+        float: left;
+        padding-top: 10px;
+    }
+}
+header {
+    nav {
+        float: right;
+    }
+    ul {
+        li {
+            display: inline;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+header {
+    ul {
+        li {
+            ul {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                display: none;
+                position: absolute;
+                padding: 10px;
+                right:0;
+                width: 300px;
+            }
+        }
+        li:hover {
+            ul {
+                display: block;
+            }
+        }
+        li {
+            img {
+                border-radius: 50%;
+            }
+        }
+        li.subtotal-list {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    }
+}
+li.list-cart {
+    position: relative;
+}
+li.list-cart {
+    ul {
+        li {
+            display: block;
+            padding: 5px 0;
+        }
+        li {
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+    sup {
+        background-color: #ff0000;
+        border-radius: 100%;
+        color: #fff;
+        font-weight: bold;
+        padding: 3px;
+    }
+}

@@ -1,0 +1,13 @@
+.pdt-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.pdt-group {
+    // border: 1px solid #ddd;
+    box-shadow: 1px 1px 10px #ddd;
+    padding: 10px;
+    margin: 2px;
+}
+.pdt-group:hover {
+    box-shadow: 1px 1px 10px #ccc;
+}

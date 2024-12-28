@@ -1,0 +1,15 @@
+<div class="col-sm-12">
+    @if(productList.length>0){
+        <div class="pdt-container">
+            @for(item of productList;track item){
+                <div class="pdt-group">
+                    <div><img [src]="item.productImageUrl" height="150" /><br />${{item.productPrice}}</div>
+                    <div>{{item.productName}}</div>
+                    <div class="text-end">
+                        <button class="btn btn-success" (click)="addItemToCart(item.productId)">Add to Cart</button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

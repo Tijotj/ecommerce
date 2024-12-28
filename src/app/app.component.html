@@ -1,0 +1,33 @@
+<div class="container">
+  <header>
+    <h1><a href="/" title="Home">EComm</a></h1>
+    <nav class="pt-3">
+      <ul>
+        <li><a routerLink="products">Home </a></li>
+        <li><a routerLink="cart">Cart </a></li>
+        <li><a routerLink="sale">Sale </a> </li>
+        <li><i class="fa fa-search" aria-hidden="true"></i> </li>
+        <li class="list-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          @if(cartItems.length>0){
+            <sup>{{cartItems.length}}</sup>
+            <ul>
+              @for(item of cartItems;track item){
+                <li><span><img [src]="item.productImageUrl" height="30px" /></span>
+                  <span>{{item.productName}} </span>
+                  <span>{{item.quantity+1}}</span>
+                  <span>${{item.productPrice}} </span></li>
+              }
+              <li class="subtotal-list">Sub total: ${{subTotal}}<br />{{cartItems.length}} items</li>
+              <li class="text-end"><button class="btn btn-primary" (click)="navigateToSale()">Check Out</button></li>
+            </ul>
+          } 
+        </li>
+      </ul>
+    </nav>
+    <div class="floatClear"></div>
+    
+  </header>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>
